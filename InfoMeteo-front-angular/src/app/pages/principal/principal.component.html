@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="d-flex justify-content-center p-3">
+    <h1>
+      <a class="font-weight-light">info</a><strong>Meteo</strong>
+    </h1>
+  </div>
+
+  <div class="container p-2">
+    <app-search (search)="search($event)"></app-search>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="container p-4" *ngIf="meteo!=null">
+    <app-card [infoMeteo]="meteo"></app-card>
+  </div>
+
+  <div class="container p-2" *ngIf="errMsg">
+    <div class="alert alert-warning" role="alert">
+      {{errMsg}}
+    </div>
+  </div>
+
+  <div class="container p-2" *ngIf="pastSearch.length > 0">
+    <h5>Historial busquedas </h5>
+    <div class="container p-2">
+      <app-tabla [pastSearch]="pastSearch"></app-tabla>
+    </div>
+  </div>
+
+</div>

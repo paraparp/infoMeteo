@@ -1,0 +1,15 @@
+
+URL-front: 
+ 
+ - Principal: 	http://localhost:4200/infometeo
+
+
+URL-Api-back: 
+
+
+ - GET: Información meteo: http://localhost:8080/infometeo/meteo?city={nombreCiudad}
+ 
+ - GET: Informacion localización: http://localhost:8080/infometeo/position?city={nombreCiudad}
+ 
+ - GET: Historial Busquedas:http://localhost:8080/infometeo/past
+ 

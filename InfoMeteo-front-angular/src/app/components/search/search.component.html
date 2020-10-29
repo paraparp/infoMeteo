@@ -1,0 +1,10 @@
+<form name="searchForm" (ngSubmit)="onSubmit(city)">
+  <div class="row">
+    <div class="col-sm-9 p-2">
+      <input required type="text" class="form-control full-width-field" placeholder="Introduce el nombre de una ciudad..." name="ciudad" [(ngModel)]="city">
+    </div>
+    <div class="col-sm-3 p-2">
+      <button type="button" class="btn btn-secondary full-width-field">Buscar</button>
+    </div>
+  </div>
+</form>
